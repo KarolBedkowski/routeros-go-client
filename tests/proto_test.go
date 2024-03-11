@@ -1,11 +1,11 @@
-package routeros_test
+package tests
 
 import (
 	"io"
 	"testing"
 
-	"github.com/go-routeros/routeros"
-	"github.com/go-routeros/routeros/proto"
+	"routeros"
+	"routeros/proto"
 )
 
 func TestLogin(t *testing.T) {
