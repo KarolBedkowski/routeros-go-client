@@ -3,7 +3,7 @@ package routeros
 import (
 	"fmt"
 
-	"routeros/proto"
+	"github.com/KarolBedkowski/routeros-go-client/proto"
 )
 
 // ListenReply is the struct returned by the Listen*() functions.

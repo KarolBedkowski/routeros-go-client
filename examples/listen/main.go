@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"routeros"
+	routeros "github.com/KarolBedkowski/routeros-go-client"
 )
 
 var (

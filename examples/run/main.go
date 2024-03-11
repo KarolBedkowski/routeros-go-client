@@ -5,7 +5,7 @@ import (
 	"log"
 	"strings"
 
-	"routeros"
+	routeros "github.com/KarolBedkowski/routeros-go-client"
 )
 
 var (
