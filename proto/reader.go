@@ -5,6 +5,8 @@ import (
 	"bytes"
 	"fmt"
 	"io"
+
+	"golang.org/x/text/encoding/charmap"
 )
 
 // Reader reads sentences from a RouterOS device.
@@ -106,5 +108,8 @@ func (r *reader) readWord() ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	return b, nil
+
+	d := charmap.Windows1250.NewDecoder()
+
+	return d.Bytes(b)
 }
